@@ -16,6 +16,13 @@ ping = config['webhook_ping']
 if webhook_enabled == True:
     webhook = DiscordWebhook(url=webhookurl, content=f"{ping}")
 
+def Webhook(title):
+    embed = DiscordEmbed(title=f"{title}", color=0x000000)
+    webhook.add_embed(embed)
+    webhook.execute()
+    webhook.remove_embed(0)
+    subprocess.call("taskkill /f /im RobloxPlayerBeta.exe", shell=True)
+
 def Check():
     ScreenShot = pyautogui.screenshot(region=(700, 200, 550, 550))
     ScreenShot.save(r'Images/Drops.png')
@@ -23,18 +30,10 @@ def Check():
     DroppedItems = pytesseract.image_to_string(Drops)
     if check_hog == True:
         if "Hogyoku Fragment" in DroppedItems:
-            embed = DiscordEmbed(title=f"Hogyoku Fragment Found!", color=0x000000)
-            webhook.add_embed(embed)
-            webhook.execute()
-            webhook.remove_embed(0)
-            subprocess.call("taskkill /f /im RobloxPlayerBeta.exe", shell=True)
+            Webhook("Fragment Found!")
     if check_sb == True:
         if "Skill Box" in DroppedItems:
-            embed = DiscordEmbed(title=f"Skillbox Found!", color=0x000000)
-            webhook.add_embed(embed)
-            webhook.execute()
-            webhook.remove_embed(0)
-            subprocess.call("taskkill /f /im RobloxPlayerBeta.exe", shell=True)
+            Webhook("Skillbox Found!")
 
 while True:
     win = win32gui.FindWindow(None, "Roblox")
