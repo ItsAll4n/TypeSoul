@@ -3,3 +3,4 @@ pytesseract
 pyautogui
 discord_webhook
 win32gui
+pywin32
