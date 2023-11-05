@@ -1,0 +1,5 @@
+autoit
+pytesseract
+pyautogui
+discord_webhook
+win32gui
