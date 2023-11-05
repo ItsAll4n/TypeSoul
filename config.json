@@ -1,8 +1,7 @@
 {
-    "raid_lobby_key": "0",
     "check_hog": true,
     "check_sb": true,
     "webhook_enabled": true,
-    "webhook_ping": "<@420744203903959051>",
-    "webhook": "https://discord.com/api/webhooks/1170171417984254043/HBhkfi3e0dmmjFP3aiwx4gXjtpfoCT4oNmEznsex5CbX51iYtSN2wmNO-MB4tEfQn3EW"
+    "webhook_ping": "<@userid>",
+    "webhook": "https://discord.com/api/webhooks/"
 }
