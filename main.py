@@ -7,7 +7,6 @@ pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract.exe'
 with open("config.json", "r") as config:
     config = json.load(config)
 
-raid_lobby_key = config['raid_lobby_key']
 check_hog = config['check_hog']
 check_sb = config['check_sb']
 webhook_enabled = config['webhook_enabled']
