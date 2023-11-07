@@ -1,8 +1,0 @@
-{
-    "wait_time": 1,
-    "check_hog": false,
-    "check_sb": false,
-    "webhook_enabled": false,
-    "webhook_ping": "<@1234567890987654>",
-    "webhook": "https://discord.com/api/webhooks/xxxxxxxx/xxxxxxxxxxxxxx"
-}
