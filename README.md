@@ -6,6 +6,7 @@
 1) First download the latest version of the program.
 2) Extract the files to a folder of your choice.
 3) Copy the "C:\Program Files\Tesseract-OCR" folder into the folder your extracted the program into.
+4) Ensure "AutoIt" is Installed. https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.zip
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
