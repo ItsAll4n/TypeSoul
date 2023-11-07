@@ -1,14 +1,42 @@
-# Auto Raid
+# Type://Soul Auto Raid
 
-Auto Raid is a Python based macro that allows you to do raids on "Type Soul".
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Installation
+## Installation:
+1) First download the latest version of the program.
+2) Extract the files to a folder of your choice.
+3) Copy the "C:\Program Files\Tesseract-OCR" folder into the folder your extracted the program into.
 
-After ensuring Python is installed, use the installer.bat file to install all required libraries
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Usage
-Auto clicks "Ready" in Raid Lobby Queue | Auto clicks "Yes" in Raid | Sends notifications of Frag & SB Drops
+## Config guide:
 
-## License
+Default config.json file:
+```json
+{
+    "wait_time": 1,
+    "check_hog": false,
+    "check_sb": false,
+    "webhook_enabled": false,
+    "webhook_ping": "<@1234567890987654>",
+    "webhook": "https://discord.com/api/webhooks/xxxxxxxx/xxxxxxxxxxxxxx"
+}
+```
 
-ALL4N
+### wait_time:
+How often you want it to check for items/buttons.
+
+### check_hog:
+Whether or not it should check for "Hogyoku Fragments" or not.
+
+### check_sb:
+Whether or not it should check for "Skill Box" or not.
+
+### webhook_enabled:
+Whether it should send a webhook to Discord or not.
+
+### webhook_ping:
+Who the webhook should ping.
+
+### webhook:
+If you set webhook_enabled to "True" input your webhook into here to it can actually send it to you
